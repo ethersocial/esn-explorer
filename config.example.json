@@ -8,21 +8,17 @@
     "patchBlocks":  100,
     "bulkSize":     100,
     "rewards": {
-        "estimateUncle": 0.033,
+        "estimateUncle": 0.001,
         "enableECIP1017": false,
         "genesisAlloc": {
-            "total": 49922489.5246415000,
-            "Development": 17000000,
-            "Private": 13000000,
-            "Alpha beta mining": 922489.5246415000,
-            "Marketing": 9000000,
-            "Airdrop": 4000000,
-            "Burned": 1000000,
-            "Bounty": 5000000
+            "total": 2100000000,
+            "0xd26be27b448d5d87cfa747acf65b58f537266b0d": 100000000,
+            "0x73fdd033b6a819c26704037e0fe29d4278d7db9b": 1000000000,
+            "0xab9c4f84e58975ec8cb74f84e3c39c9711c69f95": 1000000000
         },
         "blocks": [
             { "start":      1, "reward": 9e+18, "uncle": 0.90625 },
-            { "start": 600000, "reward": 5e+18, "uncle": 0.90625 }
+            { "start":    100, "reward": 5e+18, "uncle": 0.90625 }
         ]
     },
     "settings": {
@@ -41,9 +37,6 @@
         "customCss": "green-haze.min.css",
         "copyright": "2018 &copy; Ethersocial Network.",
         "useEthFiat": false,
-        "poweredbyCustom": false,
-        "poweredbyEtcImage": "/img/powered-by-etcexplorer-w.png",
-        "poweredbyEtc": true,
          "miners": {
             "0x2eb64b8ab13f0d7823158217d15ba310ed3d0e58": "TopMining",
             "0xe45b202332dfec3b9bdbb30930f95b87c73da004": "TopMining",
