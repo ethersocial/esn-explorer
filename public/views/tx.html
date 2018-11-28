@@ -21,7 +21,8 @@
                 <td><a href="/addr/{{tx.creates}}">{{tx.creates}}</a></td></tr>                
           <tr ><td width="25%">Value</td><td>{{tx.value}} {{ settings.symbol }}</td></tr>
           <tr ><td width="25%">Gas Provided</td><td>{{tx.gas | number}}</td></tr>
-          <tr ><td width="25%">Gas Price</td><td>{{tx.gasPrice | number}}</td></tr>
+          <tr ><td width="25%">Gas Used</td><td>{{tx.gasUsed | number}}</td></tr>
+          <tr ><td width="25%">Gas Price</td><td>{{tx.gasPrice}} {{ settings.symbol }}</td></tr>
           <tr ><td width="25%">Nonce</td><td>{{tx.nonce}}</td></tr>
           <tr ><td width="25%">Input Data</td><td><pre class="code">{{tx.input}}</pre></td></tr>
         </table>
