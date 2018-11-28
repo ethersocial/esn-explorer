@@ -446,12 +446,12 @@ var bulkInsert = function(bulk) {
 
 function prepareJsonAddress(json, defaultType = 0) {
   var accounts = {};
-  if (json.accounts) {
+  if (json.accounts || json.alloc) {
     // genesis.json style
-    Object.keys(json.accounts).forEach(function(account) {
+    Object.keys(json.accounts || json.alloc).forEach(function(account) {
       var key = account.toLowerCase();
       key = '0x' + key.replace(/^0x/, '');
-      accounts[key] = { address: key, type: type };
+      accounts[key] = { address: key, type: defaultType };
     });
   } else if (typeof json === 'object') {
     Object.keys(json).forEach(function(account) {
